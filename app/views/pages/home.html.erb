@@ -1,10 +1,7 @@
 
 <h1> Welcome home </h1>
-<% members = ['ben', 'rebeca', 'been', 'rbe', 'nbe'] %>
-
-
-<ol>
-   <% members.each do |name|  %>
-   <li><%= name %></li>
-   <% end  %>
-</ol>
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="Who are you looking for?">
+  <input type="text" name="hello" placeholder="say hi">
+  <input type="submit">
+</form>
