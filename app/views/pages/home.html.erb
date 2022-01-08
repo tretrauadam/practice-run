@@ -1,4 +1,10 @@
 
+<h1> Welcome home </h1>
+<% members = ['ben', 'rebeca', 'been', 'rbe', 'nbe'] %>
 
 
-<h1> welcome home </h1>
+<ol>
+   <% members.each do |name|  %>
+   <li><%= name %></li>
+   <% end  %>
+</ol>
